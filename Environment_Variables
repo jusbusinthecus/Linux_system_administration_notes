@@ -4,4 +4,11 @@ printenv or env
 # view one environment variable
 echo $<variable>
 
+# setting temp variables, after closing the terminal the placement is released.
+export TEST=1
+echo $TEST
 
+# set environment permanently
+vim .bashrc
+TEST='123'
+export TEST
