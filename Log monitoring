@@ -13,7 +13,11 @@ cd /chrony
 #secure
 
 more secure # static output
-tail -f secure # live output. Opening another terminal 
+tail -f secure # live output. Opening another terminal and failing to login will show from the live output
 
-#messages
+
+#messages, ONE OF THE MOST IMPORTANT. Why? It contains a lot of information
+
+
+
 #httpd
