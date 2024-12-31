@@ -1,1 +1,7 @@
+# check environment variables for the system
+printenv or env
+
+# view one environment variable
+echo $<variable>
+
 
