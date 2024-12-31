@@ -5,11 +5,15 @@ primary log = /var/log
 #boot
 more /var/log/boot.log
 
-#chronyd = ntp
-more
+#chronyd = ntp - is a directory and is likely empty until you install and start chronyd
+cd /chrony
 
-#cron
+#cron, when you create a cron job it produces activity.
 #maillog
 #secure
+
+more secure # static output
+tail -f secure # live output. Opening another terminal 
+
 #messages
 #httpd
