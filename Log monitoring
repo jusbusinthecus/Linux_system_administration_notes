@@ -1,0 +1,15 @@
+Log Monitoring
+
+primary log = /var/log
+
+#boot
+more /var/log/boot.log
+
+#chronyd = ntp
+more
+
+#cron
+#maillog
+#secure
+#messages
+#httpd
