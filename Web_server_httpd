@@ -4,3 +4,10 @@ files = /etc/http/conf/httpd.conf
       = /var/www/html/index.html
 
 Log files = /var/log/httpd
+
+
+Nginx
+
+files = /etc/nginx/nginx.conf
+      = /etc/nginx/conf.d/myfirstlinuxos.conf
+      = /var/www/myfirstlinuxos/html
