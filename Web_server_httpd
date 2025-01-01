@@ -1,0 +1,4 @@
+Service or package = httpd
+
+files = /etc/http/conf/httpd.conf
+      = /var/www/html/index.html
