@@ -38,4 +38,5 @@ Verify you can see your new file.
 Add service to firewall
 - firewalld-cmd --add-service=sap # add --permanent as needed.
 
-
+Adding ports
+- firewall-cmd --add-port=<portnumber>/tcp or udp
