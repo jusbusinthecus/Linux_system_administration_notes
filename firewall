@@ -1,0 +1,3 @@
+Check rule for firewall = firewall-cmd --list-all
+
+get list of all services firewalld is aware of = firewall-cmd --get-services
