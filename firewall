@@ -46,3 +46,6 @@ Reject incoming traffic from an IP address
 
 To block and unblock ICMP incoming traffic you will not be able to ping the server from other devices
 - firewall-cmd --add-icmp-block-inversion
+
+Block a website, get IP of website. You will not be able to ping the server
+- firewall-cmd --direct --add-rule ipv4 filter OUTPUT 0 -d <ip_address> -j DROP
