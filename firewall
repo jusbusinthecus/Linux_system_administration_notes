@@ -30,3 +30,9 @@ Copy any xml file and change the service and port number. In this example sap is
 </service>
  
 restart firewalld service
+- systemctl restart firewalld
+
+Verify you can see your new file.
+- firewall-cmd --get-services 
+
+
