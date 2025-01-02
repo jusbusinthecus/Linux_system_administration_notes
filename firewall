@@ -9,3 +9,8 @@ For active zones = firewall-cmd --get-active-zones # public is commonly used.
 to get a specific zone = firewall-cmd --zone=<zone> --list-all
 
 adding a service to firewall rules = firewall-cmd --add-service=http # of course you want to make sure the httpd service is running.
+Remove service - firewall-cmd --remove-service=http
+
+reloading changes = firewall-cmd --reload
+
+permament changes = firewall-cmd --permanent --add-service=http
