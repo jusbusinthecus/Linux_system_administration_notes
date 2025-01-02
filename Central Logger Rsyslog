@@ -1,0 +1,5 @@
+Purpose = Generate logs or collect logs from other servers
+
+service or package name = rsyslog
+config file = /etc/rsyslog.conf
+
