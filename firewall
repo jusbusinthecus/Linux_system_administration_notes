@@ -33,6 +33,9 @@ restart firewalld service
 - systemctl restart firewalld
 
 Verify you can see your new file.
-- firewall-cmd --get-services 
+- firewall-cmd --get-services | grep sap
+
+Add service to firewall
+- firewalld-cmd --add-service=sap # add --permanent as needed.
 
 
