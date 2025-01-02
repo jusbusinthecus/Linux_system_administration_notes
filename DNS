@@ -1,0 +1,12 @@
+IP to hostname = Pointer record (PTR)
+
+Hostname to IP = A record
+
+Hostname to Hostname = CNAME record
+
+Config files = /etc/named.conf
+             = /var/named   - 
+
+package = bind
+
+service = named
