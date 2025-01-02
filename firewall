@@ -13,4 +13,20 @@ Remove service - firewall-cmd --remove-service=http
 
 reloading changes = firewall-cmd --reload
 
-permament changes = firewall-cmd --permanent --add-service=http
+permament changes = firewall-cmd --permanent --add-service=http  # same with remove
+
+
+To add a service that is not predefined by firewalld service
+- ll /usr/lib/firewalld/services/
+Copy any xml file and change the service and port number. In this example sap is being used which is port 32
+- cp /usr/lib/firewalld/services/ssh.xml sap.xml
+- vim sap.xml # replace short description with SAP and replace description with something arbiturary and lastly change the port number to 32 or other applicable port 
+# number
+     <?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>SSH</short>
+  <description>Secure Shell (SSH) is a protocol for logging into and executing commands on remote machines. It provides secure encrypted communications. If you plan on accessing your machine remotely via SSH over a firewalled interface, enable this option. You need the openssh-server package installed for this option to be useful.</description>
+  <port protocol="tcp" port="22"/>
+</service>
+ 
+restart firewalld service
