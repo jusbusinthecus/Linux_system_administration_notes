@@ -51,4 +51,8 @@ make it readable, verify you can reach the page from another computer.
 - cp <kickstart_file> /var/www/html
 - curl http://<path_to_file> # may not be necessary
 - chmod a+r <path_to_file>
-the file to  this go to your Virtual environment and setup the parameters and create the VM template.
+
+Once you're done with the file to  this go to your Virtual environment and setup the parameters and create the VM template.
+Start the VM with the attached iso, and interupt the start screen and press 'esc'. This should take you to a screen that says 'boot:' 
+with a command prompt ready to receive input.
+
