@@ -56,3 +56,6 @@ Once you're done with the file to  this go to your Virtual environment and setup
 Start the VM with the attached iso, and interupt the start screen and press 'esc'. This should take you to a screen that says 'boot:' 
 with a command prompt ready to receive input.
 
+syntax:
+
+- linux ks=http//<IP>/<path_to_file> #remember in this example were are using http connection
