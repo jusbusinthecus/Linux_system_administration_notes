@@ -5,3 +5,41 @@ Make the kickstart file available on a network location
 Make the installation source available
 Make boot media available for client which will be used to begin the installation
 start the kickstart installation
+
+You can use either: NFS, FTP, HTTP or HTTPS, for this example http will be used.
+
+When logging in as root home directory there is a anaconda kickstart file that you can modify or create a fresh one:
+
+
+#Beginning of kickstart file for installing
+#version=RHEL9
+install
+lang en_US.UTF-8
+keyboard us
+network --bootproto=dhcp --hostname=your.hostname.com
+rootpw --iscrypted # to create a hashed password run this on a rhel command "openssl passwd -6 your_password_here" and add to this line.
+timezone America/New_York --isUtc
+user --name=your_username --password=your_hashed_password_here --gecos="Your Name" --groups=wheel
+
+# Partitioning
+autopart --type=lvm
+
+# System services
+services --enabled="sshd"
+
+# Package selection
+%packages
+@^minimal
+@^web-server
+@^container-tools
+wget
+curl
+vim
+git
+%end
+
+# Post-installation script
+%post
+echo "Post-installation script running"
+# Add any additional configuration commands here
+%end
