@@ -1,1 +1,7 @@
+To use Kickstart you must:
 
+Choose a kickstart server and create/edit a kickstart file
+Make the kickstart file available on a network location
+Make the installation source available
+Make boot media available for client which will be used to begin the installation
+start the kickstart installation
